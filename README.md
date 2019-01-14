@@ -1,0 +1,1 @@
+Migrating failed project from vue to simple webpack boilerplate. App is built with MVC pattern, further plans - Express/Hapi backend.
