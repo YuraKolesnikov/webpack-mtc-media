@@ -1,3 +1,7 @@
+*
+  box-sizing: border-box
+  &:before, &:after
+    box-sizing: border-box
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -42,7 +46,11 @@ table
     outline: none
     
 body
-
+    font-size: 16px
+    min-width: 320px
+    position: relative
+    overflow-x: hidden
+    opacity: 1
 main
     display: block
     
@@ -56,7 +64,10 @@ main
     display: -webkite-flex
     display: flex
     flex-flow: row nowrap
-
+.container
+    max-width: 960px
+    width: 100%
+    margin: 0 auto
 /* Spacing */
 .space-sm
     padding: 10px 0
