@@ -1,0 +1,98 @@
+.top-header
+    width: 100vw
+    min-width: 320px
+    height: 60px
+    background-color: $headerGray
+    color: $dark
+    &__content
+        justify-content: space-between
+        align-items: center
+        height: 100%
+        font-size: 1em
+        letter-spacing: $regularSpacing
+    &__right
+        justify-content: space-around
+    &__link
+        margin-right: 10px
+        transform: translateY(7px)
+        &:nth-last-of-type(1)
+            margin-right: 40px
+    &__icon
+        margin-right: 10px
+        color: white
+        background: $dark
+        border-radius: 100%
+        cursor: pointer
+        transition: background-color .35s ease
+        &.fa-facebook
+            padding: 7px 10px
+        &.fa-twitter
+            padding: 7px
+        &:hover
+            background: lighten($dark, 10%)
+.main-header
+    &__content
+        justify-content: space-between
+        align-items: center
+        height: 162px
+    &__logo
+        justify-self: center
+    &__button
+        width: 273px
+        font-size: 1.28em
+        color: $dark
+        letters-spacing: 0.9px
+        text-transform: uppercase
+        border: 1px solid $headerGray
+        padding: 10px 0
+        font-weight: bold
+        cursor: pointer
+        outline: none
+        text-align: center
+        transition: border .35s ease
+        &:hover
+            border: 1px solid #aaa
+        & span
+            padding-left: 5px
+            font-size: .8em
+            font-weight: normal
+            color: #8c8c8c
+            text-transform: none
+.bottom-header
+    justify-content: space-between
+    padding-top: 10px
+    &__search-bar
+    &__menu
+        justify-content: space-between
+        align-items: center
+        width: 40%
+    &__link
+        text-transform: uppercase
+        letter-spacing: 0.7px
+        font-size: 1em
+    &__input
+        width: 328px
+        height: 24px
+        padding: 20px
+        border: 1px solid $headerGray
+        &::placeholder
+            color: $light
+            transition: opacity .2s ease
+        &:focus
+            outline: none
+            &::placeholder
+                opacity: 0
+    &__button
+        background-color: $dark
+        color: white
+        font-size: 1.15em
+        margin: 0
+        padding: 0
+        height: 42px
+        width: 52px
+        border: none
+        transform: translateX(-4px) translateY(2px)
+        cursor: pointer
+        transition: background-color .35s ease
+        &:hover
+            background-color: $light
