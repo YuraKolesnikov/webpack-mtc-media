@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box; }
+  *:before, *:after {
+    box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  outline: none; }
+
+body {
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  overflow-x: hidden;
+  opacity: 1; }
+
+main {
+  display: block; }
+
+.italic {
+  font-style: oblique; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+hr {
+  margin: 0; }
+
+/* Layout styling */
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkite-flex;
+  display: flex;
+  flex-flow: row nowrap; }
+
+.container {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto; }
+
+/* Spacing */
+.space-sm {
+  padding: 10px 0; }
+
+.top-header {
+  width: 100vw;
+  min-width: 320px;
+  height: 60px;
+  background-color: #DCDDDB;
+  color: #3d3c3c; }
+  .top-header__content {
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    font-size: 1em;
+    letter-spacing: 0.7px; }
+  .top-header__right {
+    justify-content: space-around; }
+  .top-header__link {
+    margin-right: 10px;
+    transform: translateY(7px); }
+    .top-header__link:nth-last-of-type(1) {
+      margin-right: 40px; }
+  .top-header__icon {
+    margin-right: 10px;
+    color: white;
+    background: #3d3c3c;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background-color .35s ease; }
+    .top-header__icon.fa-facebook {
+      padding: 7px 10px; }
+    .top-header__icon.fa-twitter {
+      padding: 7px; }
+    .top-header__icon:hover {
+      background: #575555; }
+
+.main-header__content {
+  justify-content: space-between;
+  align-items: center;
+  height: 162px; }
+
+.main-header__logo {
+  justify-self: center; }
+
+.main-header__button {
+  width: 273px;
+  font-size: 1.28em;
+  color: #3d3c3c;
+  letters-spacing: 0.9px;
+  text-transform: uppercase;
+  border: 1px solid #DCDDDB;
+  padding: 10px 0;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  transition: border .35s ease; }
+  .main-header__button:hover {
+    border: 1px solid #aaa; }
+  .main-header__button span {
+    padding-left: 5px;
+    font-size: .8em;
+    font-weight: normal;
+    color: #8c8c8c;
+    text-transform: none; }
+
+.bottom-header {
+  justify-content: space-between;
+  padding-top: 10px; }
+  .bottom-header__menu {
+    justify-content: space-between;
+    align-items: center;
+    width: 40%; }
+  .bottom-header__link {
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    font-size: 1em; }
+  .bottom-header__input {
+    width: 328px;
+    height: 24px;
+    padding: 20px;
+    border: 1px solid #DCDDDB; }
+    .bottom-header__input::placeholder {
+      color: #696868;
+      transition: opacity .2s ease; }
+    .bottom-header__input:focus {
+      outline: none; }
+      .bottom-header__input:focus::placeholder {
+        opacity: 0; }
+  .bottom-header__button {
+    background-color: #3d3c3c;
+    color: white;
+    font-size: 1.15em;
+    margin: 0;
+    padding: 0;
+    height: 42px;
+    width: 52px;
+    border: none;
+    transform: translateX(-4px) translateY(2px);
+    cursor: pointer;
+    transition: background-color .35s ease; }
+    .bottom-header__button:hover {
+      background-color: #696868; }
