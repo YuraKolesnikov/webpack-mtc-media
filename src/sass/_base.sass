@@ -69,9 +69,19 @@ hr
     display: flex
     flex-flow: row nowrap
 .container
-    max-width: 960px
+    max-width: 1080px
     width: 100%
     margin: 0 auto
+    padding: 0 20px
 /* Spacing */
 .space-sm
     padding: 10px 0
+
+/* Visible elements */
+.hidden-sm
+    display: none
+@media screen and (min-width: 768px)
+    .visible-sm
+        display: none
+    .hidden-sm
+        display: inline-block

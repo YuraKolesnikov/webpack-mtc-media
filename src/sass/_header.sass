@@ -2,8 +2,10 @@
     width: 100vw
     min-width: 320px
     height: 60px
+    padding: 0 20px
     background-color: $headerGray
     color: $dark
+    font-family: 'Karla Regular'
     &__content
         justify-content: space-between
         align-items: center
@@ -19,65 +21,89 @@
             margin-right: 40px
     &__icon
         margin-right: 10px
-        color: white
-        background: $dark
-        border-radius: 100%
         cursor: pointer
-        transition: background-color .35s ease
-        &.fa-facebook
-            padding: 7px 10px
-        &.fa-twitter
-            padding: 7px
-        &:hover
-            background: lighten($dark, 10%)
+        transition: background-color .35s ease, color .35s ease
+        line-height: 15px
+        &-black
+            padding: 5px
+            font-size: 20px
+            color: $dark
+            &:hover
+                color: lighten($dark, 20%)
+            &:active
+                color: darken($dark, 10%)
+        &-white
+            margin-right: 10px
+            color: white
+            background: $dark
+            border-radius: 100%
+            font-size: 14px
+            &.fa-facebook
+                padding: 7px 10px
+            &.fa-twitter
+                padding: 7px
+            &:hover
+                background: lighten($dark, 10%)
+            &:active
+                background: darken($dark, 10%)
 .main-header
     &__content
-        justify-content: space-between
+        justify-content: space-around
         align-items: center
         height: 162px
     &__logo
         justify-self: center
+        margin: 0 15px
     &__button
-        width: 273px
+        width: 25%
+        min-width: 150px
         font-size: 1.28em
+        background: white
         color: $dark
         letters-spacing: 0.9px
         text-transform: uppercase
         border: 1px solid $headerGray
-        padding: 10px 0
-        font-weight: bold
+        padding: 10px
         cursor: pointer
         outline: none
         text-align: center
         transition: border .35s ease
+        font-family: 'Karla Bold'
         &:hover
             border: 1px solid #aaa
         & span
             padding-left: 5px
-            font-size: .8em
-            font-weight: normal
+            font-size: .75em
+            font-family: 'Karla Regular'
             color: #8c8c8c
             text-transform: none
 .bottom-header
-    justify-content: space-between
     padding-top: 10px
-    &__search-bar
-    &__menu
+    &__content
         justify-content: space-between
-        align-items: center
+    &__search-bar
         width: 40%
+    &__menu
+        justify-content: flex-start
+        align-items: center
+        width: 60%
     &__link
         text-transform: uppercase
+        font-family: 'Karla Regular'
         letter-spacing: 0.7px
         font-size: 1em
+        margin: 0 10px
     &__input
-        width: 328px
+        width: 80%
         height: 24px
         padding: 20px
+        padding-left: 10px
         border: 1px solid $headerGray
         &::placeholder
             color: $light
+            font-size: 1.25em
             transition: opacity .2s ease
+            font-family: 'Karla Regular'
         &:focus
             outline: none
             &::placeholder
@@ -96,3 +122,31 @@
         transition: background-color .35s ease
         &:hover
             background-color: $light
+
+@media screen and (max-width: 769px)
+    .main-header__button
+        padding: 10px
+        margin: 0 20px
+        width: 200px
+    .bottom-header__content
+        flex-direction: column
+        min-height: 70px
+    .bottom-header__menu
+        width: 100%
+        justify-content: space-around
+    .bottom-header__search-bar
+        width: 100%
+        text-align: center
+    .bottom-header__input
+        align-self: center
+
+@media screen and (max-width: 540px)
+    .main-header__content
+        flex-direction: column
+        min-height: 30vh
+    .main-header__logo
+        order: 1
+        margin-bottom: 20px
+    .main-header__button
+        width: 60%
+        margin: 10px 0

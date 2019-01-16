@@ -17,10 +17,12 @@
                     <p class="top-header__enquiries">Enquiries: info@gearclothing.co.uk</p>
                 </div>
                 <div class="top-header__right flex">
-                    <a class="top-header__link" href="#">Account Login</a>
-                    <a class="top-header__link" href="#">View Basket</a>
-                    <i class="top-header__icon fa fa-facebook"></i>
-                    <i class="top-header__icon fa fa-twitter"></i>
+                    <a class="top-header__link hidden-sm" href="#">Account Login</a>
+                    <a class="top-header__link hidden-sm" href="#">View Basket</a>
+                    <i class="top-header__icon top-header__icon-black fa fa-sign-in visible-sm"></i>
+                    <i class="top-header__icon top-header__icon-black fa fa-shopping-cart visible-sm"></i>
+                    <i class="top-header__icon top-header__icon-white fa fa-facebook"></i>
+                    <i class="top-header__icon top-header__icon-white fa fa-twitter"></i>
                 </div>
             </div>
         </div>
@@ -28,20 +30,22 @@
             <div class="main-header__content flex container">
                 <button class="button main-header__button">Free UK Delivery</button>
                 <img class="main-header__logo" src="./img/header/logo.jpg" alt="Main MTC Media Logo">
-                <button class="button main-header__button">Free Returns<span>(up to 30 days)</span></button>
+                <button class="button main-header__button">Free Returns<span><br class="visible-sm"/>(up to 30 days)</span></button>
             </div>
         </div>
         <hr>
-        <div class="bottom-header flex container">
-            <div class="bottom-header__menu flex">
-                <a class="bottom-header__link" href="#">New products</a>
-                <a class="bottom-header__link" href="#">Categories</a>
-                <a class="bottom-header__link" href="#">Brands</a>
-                <a class="bottom-header__link" href="#">Christmas</a>
-            </div>
-            <div class="bottom-header__search-bar">
-                <input class="bottom-header__input" type="text" name="search-products" placeholder="Search Products">
-                <button class="hidden-sm bottom-header__button"><i class="fa fa-search"></i></button>
+        <div class="bottom-header">
+            <div class="bottom-header__content flex container">
+                <div class="bottom-header__menu flex">
+                    <a class="bottom-header__link" href="#">New products</a>
+                    <a class="bottom-header__link" href="#">Categories</a>
+                    <a class="bottom-header__link" href="#">Brands</a>
+                    <a class="bottom-header__link" href="#">Christmas</a>
+                </div>
+                <div class="bottom-header__search-bar">
+                    <input class="bottom-header__input" type="text" name="search-products" placeholder="Search Products">
+                    <button class="hidden-sm bottom-header__button"><i class="fa fa-search"></i></button>
+                </div>
             </div>
         </div>
         <!-- Здесь будет dropdown! -->
