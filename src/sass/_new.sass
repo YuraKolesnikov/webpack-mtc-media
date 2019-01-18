@@ -1,0 +1,44 @@
+.new-in
+    padding: 0px
+    &__header
+        &:before
+            +grayHeaderLine
+    &__main
+        padding:
+            top: 50px
+            bottom: 50px
+        grid-template-columns: repeat(3, 32.1%)
+        grid-gap: 18px
+    &__item
+        grid-template-rows: 300px 45px
+        padding: 0
+        &-img
+            border: none
+            width: 100%
+        &:nth-child(1) 
+            .new-in__img
+                +newInBackground('/img/new_in/new-in-1.jpg')
+            .new-in__button
+                +newInButton($footerGrey)
+        &:nth-child(2) 
+            .new-in__img
+                +newInBackground('/img/new_in/new-in-2.jpg')
+            .new-in__button
+                +newInButton($blue)
+        &:nth-child(3) 
+            .new-in__img
+                +newInBackground('/img/new_in/new-in-3.jpg')
+            .new-in__button
+                +newInButton($brown)
+    &__button
+        border: none
+        font-family: 'Karla Regular'
+        font-size: 16px
+        text-transform: uppercase
+        letter-spacing: .7px
+        cursor: pointer
+        transition: background-color .35s ease
+        a
+            color: white
+        &:hover .fa-angle-right
+            left: 15px

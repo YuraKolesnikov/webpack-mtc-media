@@ -68,11 +68,14 @@ hr
     display: -webkite-flex
     display: flex
     flex-flow: row nowrap
+.grid
+    display: grid
 .container
     max-width: 1080px
     width: 100%
     margin: 0 auto
     padding: 0 40px
+    text-align: center
 /* Spacing */
 .space-sm
     padding: 10px 0
@@ -85,3 +88,27 @@ hr
         display: none
     .hidden-sm
         display: inline-block
+
+/* Reusable elements, place in separate folder later */
+.header-button
+    width: 108px
+    padding: 10px
+    border: 1px solid #d9d9d9
+    line-height: 0
+    letter-spacing: 1.4px
+    text-align: center
+    font-size: 14px
+    text-transform: uppercase
+    position: relative
+    background: white
+    cursor: pointer
+    font-family: 'Karla Regular'
+    .fa-angle-right
+        font-size: 15px
+        margin: 0
+        padding: 0
+        position: relative
+        left: 10px
+        transition: left .35s ease
+    &:hover .fa-angle-right
+        left: 15px
