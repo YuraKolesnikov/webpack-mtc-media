@@ -1,3 +1,23 @@
+.brands
+    margin-bottom: 100px
+    hr
+        height: 1px
+        border: none
+        background-color: #D9D9D9
+        margin: 0
+        padding: 0
+        width: 100%
 .brands__header
     &:before
         +grayHeaderLine
+.brands__main
+    padding-top: 30px
+    grid-template-columns: repeat(5, 1fr)
+    height: 27px
+.brands__item
+    height: 27px
+    cursor: pointer
+    opacity: 1
+    transition: opacity .35s ease
+    &:hover
+        opacity: .7
