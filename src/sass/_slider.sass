@@ -1,7 +1,7 @@
 .slider
+    margin: 50px 0
     &__main
         position: relative
-    margin: 50px 0
     &__cell
         width: 830px
         height: 500px
@@ -69,12 +69,16 @@
     line-height: 1
 
 @media screen and (max-width: 768px)
+    .slider
+        margin-top: 20px
     .flickity-prev-next-button
         display: none
+    .flickity-enabled
+        padding-top: 20px
 
 @media screen and (max-width: 480px)
     .flickity-enabled
-        padding-top: 50px
+        padding-top: 0
     .flickity-viewport
         width: 100vw
         height: 350px

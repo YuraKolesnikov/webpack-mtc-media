@@ -14,15 +14,15 @@
         <div class="top-header">
             <div class="top-header__content flex container">
                 <div class="top-header__left">
-                    <p class="top-header__enquiries">Enquiries: info@gearclothing.co.uk</p>
+                    <p class="top-header__enquiries"><a href="mailto:info@gearclothing.co.uk" target="_blank">Enquiries: info@gearclothing.co.uk</a></p>
                 </div>
                 <div class="top-header__right flex">
                     <a class="top-header__link hidden-sm" href="#">Account Login</a>
                     <a class="top-header__link hidden-sm" href="#">View Basket</a>
                     <i class="top-header__icon top-header__icon-black fa fa-sign-in visible-sm"></i>
                     <i class="top-header__icon top-header__icon-black fa fa-shopping-cart visible-sm"></i>
-                    <i class="top-header__icon top-header__icon-white fa fa-facebook"></i>
-                    <i class="top-header__icon top-header__icon-white fa fa-twitter"></i>
+                    <a href="https://facebook.com" target="_blank"><i class="top-header__icon top-header__icon-white fa fa-facebook"></i></a>
+                    <a href="https://twitter.com" target="_blank"><i class="top-header__icon top-header__icon-white fa fa-twitter"></i></a>
                 </div>
             </div>
         </div>
@@ -37,14 +37,18 @@
         <div class="bottom-header">
             <div class="bottom-header__content flex container">
                 <div class="bottom-header__menu flex">
-                    <a class="bottom-header__link" href="#">New products</a>
-                    <a class="bottom-header__link" href="#">Categories</a>
-                    <a class="bottom-header__link" href="#">Brands</a>
-                    <a class="bottom-header__link" href="#">Christmas</a>
+                    <ul class="flex">
+                        <li><a class="bottom-header__link" href="#">New products</a></li>
+                        <li><a class="bottom-header__link" href="#">Categories</a></li>
+                        <li><a class="bottom-header__link" href="#">Brands</a></li>
+                        <li><a class="bottom-header__link" href="#">Christmas</a></li>
+                    </ul>
                 </div>
                 <div class="bottom-header__search-bar">
-                    <input class="bottom-header__input" type="text" name="search-products" placeholder="Search Products">
-                    <button class="hidden-sm bottom-header__button"><i class="fa fa-search"></i></button>
+                    <form>
+                        <input class="bottom-header__input" type="search" name="search-products" placeholder="Search Products">
+                        <button type="submit" class="hidden-sm bottom-header__button"><i class="fa fa-search"></i></button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -54,19 +58,19 @@
         <section class="slider" id="slider">
             <div class="slider__main">
                 <div class="slider__cell">
-                    <h2 class="slider__title">Shop Lyle &amp; Scott<i class="fa fa-angle-right"></i></h2>
+                    <a href="https://www.lyleandscott.com/" target="_blank" class="slider__title">Shop Lyle &amp; Scott<i class="fa fa-angle-right"></i></a>
                 </div>
                 <div class="slider__cell">
-                    <h2 class="slider__title">Shop Lyle &amp; Scott<i class="fa fa-angle-right"></i></h2>
+                    <a href="https://www.lyleandscott.com/" target="_blank" class="slider__title">Shop Lyle &amp; Scott<i class="fa fa-angle-right"></i></a>
                 </div>
                 <div class="slider__cell">
-                    <h2 class="slider__title">Shop Lyle &amp; Scott<i class="fa fa-angle-right"></i></h2>
+                    <a href="https://www.lyleandscott.com/" target="_blank" class="slider__title">Shop Lyle &amp; Scott<i class="fa fa-angle-right"></i></a>
                 </div>
             </div>
         </section>
         <section class="new-in" id="new_in">
             <div class="new-in__header container">
-                <button class="header-button"><a href="#header">New In<i class="fa fa-angle-right"></i></a></button>
+                <a href="#header" class="header-button">New In<i class="fa fa-angle-right"></i></a>
             </div>
             <div class="new-in__main container grid">
                 <div class="new-in__item grid">
@@ -97,21 +101,21 @@
         </section>
         <section class="brands" id="brands">
             <div class="brands__header container">
-                <button class="header-button"><a href="#header">Brands<i class="fa fa-angle-right"></i></a></a></button>
+                <a href="#header" class="header-button">Brands<i class="fa fa-angle-right"></i></a>
             </div>
             <div class="brands__main grid container">
-                <div class="brands__item"><img src="./img/brands/brand-logo-1.jpg" alt=""></div>
-                <div class="brands__item"><img src="./img/brands/brand-logo-2.jpg" alt=""></div>
-                <div class="brands__item"><img src="./img/brands/brand-logo-3.jpg" alt=""></div>
-                <div class="brands__item"><img src="./img/brands/brand-logo-4.jpg" alt=""></div>
-                <div class="brands__item"><img src="./img/brands/brand-logo-5.jpg" alt=""></div>
+                <a href="https://www.g-star.com" target="_blank" class="brands__item"><img src="./img/brands/brand-logo-1.jpg" alt=""></a>
+                <a href="https://uk.diesel.com" target="_blank" class="brands__item"><img src="./img/brands/brand-logo-2.jpg" alt=""></a>
+                <a href="https://www.barbour.com/" target="_blank" class="brands__item"><img src="./img/brands/brand-logo-3.jpg" alt=""></a>
+                <a href="https://www.lyleandscott.com/" target="_blank" class="brands__item"><img src="./img/brands/brand-logo-4.jpg" alt=""></a>
+                <a href="https://www.replayjeans.com/" target="_blank" class="brands__item"><img src="./img/brands/brand-logo-5.jpg" alt=""></a>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="footer__main container grid">
             <div class="footer__menu">
-                <a class="footer__title" href="#">Menu</a>
+                <h2 class="footer__title">Menu</h2>
                 <ul>
                     <li><a href="#">New Products</a></li>
                     <li><a href="#">Categories</a></li>
@@ -123,14 +127,14 @@
             </div>
             <div class="footer__address">
                 <h2 class="footer__title">Get in touch</h2>
-                <p>8 Walker Street<br>Edinburgh<br>EH3 7LH<br><br>0131 346 4781<br>info@gearclothing.co.uk</p>
+                <p>8 Walker Street<br>Edinburgh<br>EH3 7LH<br><br>0131 346 4781<br><a href="mailto:info@gearclothing.co.uk" target="_blank">info@gearclothing.co.uk</a></p>
             </div>
             <div class="footer__subscribe">
                 <h2 class="footer__title">Newsletter</h2>
-                <div class="footer__form">
-                    <input class="footer__input" type="text" name="email" placeholder="Enter email">
+                <form class="footer__form">
+                    <input class="footer__input" type="email" name="email" placeholder="Enter email">
                     <button class="footer__submit-button hidden-xs">Submit</button>
-                </div>
+                </form>
                 <div class="footer__payment">
                     <img src="/img/footer/amex.png" alt="">
                     <img src="/img/footer/master.png" alt="">
@@ -144,8 +148,8 @@
             <hr>
         </div>
         <div class="footer__sub container flex">
-            <div class="footer__copyright">© 2013 Gear</div>
-            <div class="footer__signature">Website Design by MTC</div>
+            <div class="footer__copyright">Made for tehcnical skills demonstration only</div>
+            <div class="footer__signature">All rights owned by <a href="https://www.mtcmedia.co.uk/" target="_blank" style="text-decoration: underline;">MTC</a></div>
         </div>
     </footer>
     <script src="/build.js"></script>

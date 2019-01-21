@@ -15,7 +15,7 @@
     &__right
         justify-content: space-around
     &__link
-        margin-right: 10px
+        margin-right: 20px
         transform: translateY(7px)
         &:nth-last-of-type(1)
             margin-right: 40px
@@ -24,29 +24,30 @@
         cursor: pointer
         transition: background-color .35s ease, color .35s ease
         line-height: 15px
+        border-radius: 100%
         &-black
             padding: 5px
-            font-size: 20px
             color: $dark
+            font-size: 26px
+            -webkit-transform: translateY(2px)
+            -ms-transform: translateY(2px)
             transform: translateY(2px)
             &:hover
                 color: lighten($dark, 20%)
             &:active
                 color: darken($dark, 10%)
         &-white
-            margin-right: 10px
             color: white
             background: $dark
-            border-radius: 100%
             font-size: 14px
-            &.fa-facebook
-                padding: 7px 10px 7px 10px
-            &.fa-twitter
-                padding: 7px
             &:hover
                 background: lighten($dark, 10%)
             &:active
                 background: darken($dark, 10%)
+        &.fa-facebook
+            padding: 7px 10px 7px 10px
+        &.fa-twitter
+            padding: 7px
 .main-header
     &__content
         justify-content: space-around
@@ -94,6 +95,8 @@
         letter-spacing: 0.7px
         font-size: 1em
         margin: 0 10px
+        &:hover
+            color: $light
     &__input
         width: 80%
         height: 24px
@@ -133,12 +136,13 @@
         width: 200px
     .bottom-header__content
         flex-direction: column
+        align-items: center
         min-height: 70px
     .bottom-header__menu
         width: 100%
         justify-content: space-around
     .bottom-header__search-bar
-        width: 100%
+        width: 60%
         text-align: center
     .bottom-header__input
         align-self: center
@@ -156,3 +160,11 @@
     .main-header__button
         width: 60%
         margin: 10px 0
+    .bottom-header__menu
+        min-height: 90px
+    .bottom-header__menu ul
+        flex-direction: column
+        li
+            margin: 6px 0
+    .bottom-header__search-bar
+        width: 100%
