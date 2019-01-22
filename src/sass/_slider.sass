@@ -2,6 +2,9 @@
     margin: 50px 0
     &__main
         position: relative
+        max-width: 1480px
+        margin: 0 auto
+        overflow: hidden
     &__cell
         width: 830px
         height: 500px
@@ -13,7 +16,7 @@
         margin: 0 4px
         background-image: url('/img/slider/slider.jpg')
         background-position: center
-        background-size: cover
+        background-size: contain
         background-repeat: no-repeat
         &.is-selected
             opacity: 1
@@ -38,9 +41,6 @@
     left: 10px
     transition: left .35s ease
 .flickity-button
-    position: absolute
-    top: 50%
-    transform: translateY(-50%)
     border: none
     background-color: transparent
     opacity: .5
@@ -52,14 +52,17 @@
     &:hover
         opacity: 1
 .flickity-prev-next-button
+    position: absolute
     width: 60px
     height: 60px
     font-weight: 200
     cursor: pointer
     &.previous
-        left: 330px
+        left: 0
+        top: 40%
     &.next
-        right: 330px
+        right: 0
+        top: 40%
 .flickity-page-dots
     width: 100%
     position: absolute
@@ -81,13 +84,13 @@
         padding-top: 0
     .flickity-viewport
         width: 100vw
-        height: 350px
+        height: auto
     .slider__main
         width: 100vw
     .slider__cell
         height: 350px
-        background-size: cover
-        background-position: stretch
+        background-size: contain
+        background-position: center
     .slider__title
         font-size: 30px
-        bottom: 80px
+        bottom: 40px

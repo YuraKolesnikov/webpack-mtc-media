@@ -113,8 +113,48 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer__main container grid">
-            <div class="footer__menu">
+        <div class="footer__main container flex">
+            <div class="footer__subscribe flex">
+                <form action="submit">
+                    <input class="footer__input" type="email" name="email" placeholder="Enter email">
+                    <button class="footer__submit-button hidden-xs">Submit</button>
+                </form>
+                <div class="footer__payment">
+                    <h2 class="footer__title">We accept payments</h2>
+                    <ul class="footer__cards">
+                        <li><img src="/img/footer/amex.png" alt=""></li>
+                        <li><img src="/img/footer/master.png" alt=""></li>
+                        <li><img src="/img/footer/paypal.png" alt=""></li>
+                        <li><img src="/img/footer/solo.png" alt=""></li>
+                        <li><img src="/img/footer/visa.png" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__info">
+                <div class="footer__menu">
+                    <h2 class="footer__title">Menu</h2>
+                    <ul>
+                        <li><a href="#">New Products</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Brands</a></li>
+                        <li><a href="#">Christmas</a></li>
+                        <li><a href="#">Delivery &amp; Returns</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer__address">
+                    <h2 class="footer__title">Our location</h2>
+                    <p>8 Walker Street<br>Edinburgh<br>EH3 7LH<br><br>0131 346 4781<br><a href="mailto:info@gearclothing.co.uk" target="_blank">info@gearclothing.co.uk</a></p>
+                </div>
+            </div>
+            <div class="footer__get-in-touch">
+                <form action="submit">
+                    <textarea name="message" cols="30" rows="10"></textarea>
+                    <button class="footer__submit-button">Submit</button>
+                </form>
+            </div>
+        </div>
+            <!-- <div class="footer__menu">
                 <h2 class="footer__title">Menu</h2>
                 <ul>
                     <li><a href="#">New Products</a></li>
@@ -124,11 +164,12 @@
                     <li><a href="#">Delivery &amp; Returns</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                 </ul>
+                <div class="footer__address">
+                    <h2 class="footer__title">Get in touch</h2>
+                    <p>8 Walker Street<br>Edinburgh<br>EH3 7LH<br><br>0131 346 4781<br><a href="mailto:info@gearclothing.co.uk" target="_blank">info@gearclothing.co.uk</a></p>
+                </div>
             </div>
-            <div class="footer__address">
-                <h2 class="footer__title">Get in touch</h2>
-                <p>8 Walker Street<br>Edinburgh<br>EH3 7LH<br><br>0131 346 4781<br><a href="mailto:info@gearclothing.co.uk" target="_blank">info@gearclothing.co.uk</a></p>
-            </div>
+            
             <div class="footer__subscribe">
                 <h2 class="footer__title">Newsletter</h2>
                 <form class="footer__form">
@@ -143,7 +184,7 @@
                     <img src="/img/footer/visa.png" alt="">
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="container">
             <hr>
         </div>

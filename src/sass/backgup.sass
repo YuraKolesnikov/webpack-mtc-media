@@ -1,0 +1,94 @@
+.footer
+    background-color: $footerGrey
+    min-height: 100px
+    padding-top: 20px
+    & > *
+        font-family: 'Karla Regular'
+    &__main
+        grid-template-columns: 1fr 1fr 2fr
+        text-align: left
+        padding-bottom: 30px
+        li
+            display: block
+            letter-spacing: .7px
+            line-height: 21px
+            a
+                color: #C5C5C5
+                font-family: 'Karla Bold'
+                &:hover
+                    color: #FFF
+    &__title
+        display: block
+        color: white
+        margin-bottom: 10px
+        font-size: 18px
+        text-decoration: underline
+        text-transform: uppercase
+    &__address
+        color: #C5C5C5
+        letter-spacing: .7px
+        line-height: 21px
+    &__form
+        margin-top: 25px
+    &__input
+        padding: 12px
+        width: 290px
+        border: 1px solid #D9D9D9
+        &::placeholder
+            color: #6A6A6A
+            font-size: 14px
+            transition: opacity .2s ease
+        &:focus 
+            &::placeholder
+                opacity: 0
+    &__submit-button
+        background: $dark
+        color: white
+        font-size: 13px
+        font-family: 'Karla Bold'
+        letter-spacing: .7px
+        text-transform: uppercase
+        padding: 12px 15px
+        margin: 0 0 0 -5px
+        border: none
+        cursor: pointer
+        transition: background .35s ease
+        &:hover
+            background: lighten($dark, 10%)
+        &:active
+            background: darken($dark, 5%)
+    &__payment
+        margin-top: 25px
+        img
+            max-width: 45px
+            width: 100%
+    &__sub
+        padding:
+            top: 20px
+            bottom: 20px
+        justify-content: space-between
+        font-size: 14px
+        color: #fff
+        letter-spacing: .7px
+
+@media screen and (max-width: 768px)
+    .footer__submit-button
+        display: none
+
+@media screen and (max-width: 480px)
+    .footer__main
+        grid-template-columns: none
+        text-align: center
+        font-size: 18px
+    .footer__menu
+        padding-top: 20px
+    .footer__address
+        padding-top: 20px
+    .footer__subscribe
+        padding-top: 20px
+    .footer__sub
+        flex-direction: column
+        justify-content: space-between
+        min-height: 60px
+        word-wrap: break-word
+        padding: 10px 30px

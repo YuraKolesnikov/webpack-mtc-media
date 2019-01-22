@@ -1,35 +1,14 @@
 .footer
-    background-color: $footerGrey
-    min-height: 100px
-    padding-top: 20px
-    & > *
-        font-family: 'Karla Regular'
     &__main
-        grid-template-columns: 1fr 1fr 2fr
+        flex-wrap: wrap
+    &__subscribe,
+    &__info,
+    &__get-in-touch
+        width: calc(100% / 3 - 20px)
+        margin: 0 10px
+    &__payment
         text-align: left
-        padding-bottom: 30px
-        li
-            display: block
-            letter-spacing: .7px
-            line-height: 21px
-            a
-                color: #C5C5C5
-                font-family: 'Karla Bold'
-                &:hover
-                    color: #FFF
-    &__title
-        display: block
-        color: white
-        margin-bottom: 10px
-        font-size: 18px
-        text-decoration: underline
-        text-transform: uppercase
-    &__address
-        color: #C5C5C5
-        letter-spacing: .7px
-        line-height: 21px
-    &__form
-        margin-top: 25px
+        width: 40%
     &__input
         padding: 12px
         width: 290px
@@ -57,31 +36,30 @@
             background: lighten($dark, 10%)
         &:active
             background: darken($dark, 5%)
-    &__payment
-        margin-top: 25px
-        img
+    /* Subscribe container */
+    &__subscribe 
+        background: teal
+        width: 100%
+        padding: 15px
+        justify-content: space-around
+        align-items: center
+    &__cards
+        li
+            display: inline-block
             max-width: 45px
             width: 100%
-    &__sub
-        padding:
-            top: 20px
-            bottom: 20px
-        justify-content: space-between
-        font-size: 14px
-        color: #fff
-        letter-spacing: .7px
+            height: auto
+            img
+                height: 100%
+                width: 100%
+    /* Info container */
+    &__info
+        background: tomato
+        height: 200px
+        width: calc(50% - 20px)
 
-@media screen and (max-width: 768px)
-    .footer__submit-button
-        display: none
-
-@media screen and (max-width: 480px)
-    .footer__main
-        grid-template-columns: none
-        text-align: center
-    .footer__menu
-        padding-top: 20px
-    .footer__address
-        padding-top: 20px
-    .footer__subscribe
-        padding-top: 20px
+    /* Get in touch container */
+    &__get-in-touch
+        background: yellow
+        width: calc(50% - 20px)
+        height: auto
