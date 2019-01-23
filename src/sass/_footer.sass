@@ -105,3 +105,29 @@
         font-size: 14px
         color: #fff
         letter-spacing: .7px
+
+@media screen and (max-width: 480px)
+    .footer
+        &__title
+            margin-top: 10px
+        &__main
+            flex-flow: column nowrap
+        &__subscribe
+            flex-direction: column
+            justify-content: space-between
+        &__payment
+            width: 100%
+            text-align: center
+        &__info
+            flex-direction: column
+            width: 100%
+            height: auto
+            text-align: center
+        &__get-in-touch
+            width: 100%
+            form
+                button
+                    float: none !important
+        &__sub
+            flex-direction: column
+            line-height: 2
