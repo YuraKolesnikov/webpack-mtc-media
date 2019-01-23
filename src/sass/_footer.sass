@@ -1,6 +1,18 @@
 .footer
+    background-color: $footerGrey
+    min-height: 100px
+    padding-top: 20px
+    font-family: 'Karla Regular'
     &__main
         flex-wrap: wrap
+        justify-content: space-between
+    &__title
+        display: block
+        color: white
+        margin-bottom: 10px
+        font-size: 18px
+        text-decoration: underline
+        text-transform: uppercase
     &__subscribe,
     &__info,
     &__get-in-touch
@@ -8,7 +20,7 @@
         margin: 0 10px
     &__payment
         text-align: left
-        width: 40%
+        width: 45%
     &__input
         padding: 12px
         width: 290px
@@ -38,10 +50,9 @@
             background: darken($dark, 5%)
     /* Subscribe container */
     &__subscribe 
-        background: teal
         width: 100%
-        padding: 15px
-        justify-content: space-around
+        padding-bottom: 10px
+        justify-content: space-between
         align-items: center
     &__cards
         li
@@ -54,12 +65,43 @@
                 width: 100%
     /* Info container */
     &__info
-        background: tomato
+        justify-content: space-around
+        text-align: left
         height: 200px
         width: calc(50% - 20px)
-
+    &__menu
+        li
+            display: block
+            letter-spacing: .7px
+            line-height: 21px
+            a
+                color: #C5C5C5
+                font-family: 'Karla Bold'
+                &:hover
+                    color: #FFF
+    &__address
+        color: #C5C5C5
+        letter-spacing: .7px
+        line-height: 21px
     /* Get in touch container */
     &__get-in-touch
-        background: yellow
+        padding: 0 30px
         width: calc(50% - 20px)
         height: auto
+        form
+            max-width: 400px
+            text-align: center
+            textarea
+                width: 100%
+                resize: none
+                margin-bottom: 10px
+            .footer__submit-button
+                float: right
+    &__sub
+        padding:
+            top: 20px
+            bottom: 20px
+        justify-content: space-between
+        font-size: 14px
+        color: #fff
+        letter-spacing: .7px
